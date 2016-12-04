@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script src="cordova.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBqkxd4O4mt62K3_M-CUl4QVibaxzhm3hs"></script>
+
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="starter">
+        <ion-pane>
+            <ion-header-bar class="bar-stable">
+                <h1 class="title">Ionic Blank Starter</h1>
+            </ion-header-bar>
+            <ion-content ng-controller="MapController">
+            
+                <div id="floating-panel">
+    <b>Start: </b>
+    <select id="start">
+      <option value="penn station, new york, ny">Penn Station</option>
+      <option value="grand central station, new york, ny">Grand Central Station</option>
+      <option value="625 8th Avenue, New York, NY, 10018">Port Authority Bus Terminal</option>
+      <option value="staten island ferry terminal, new york, ny">Staten Island Ferry Terminal</option>
+      <option value="101 E 125th Street, New York, NY">Harlem - 125th St Station</option>
+    </select>
+    <b>End: </b>
+    <select id="end">
+      <option value="260 Broadway New York NY 10007">City Hall</option>
+      <option value="W 49th St & 5th Ave, New York, NY 10020">Rockefeller Center</option>
+      <option value="moma, New York, NY">MOMA</option>
+      <option value="350 5th Ave, New York, NY, 10118">Empire State Building</option>
+      <option value="253 West 125th Street, New York, NY">Apollo Theater</option>
+      <option value="1 Wall St, New York, NY">Wall St</option>
+    </select>
+    </div>
+    <div id="map" data-tap-disabled="true"></div>
+    &nbsp;
+    <div id="warnings-panel"></div>
+            </ion-content>
+        </ion-pane>
+    </body>
+</html>
